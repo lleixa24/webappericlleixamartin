@@ -21,7 +21,7 @@ let nom, contrasenya;
 let scriptURL = "https://script.google.com/macros/s/AKfycbzGCRLwsl0hJuEwmVyCnX5Bv1yXFj0O3ltDK7JRBzZK9I1wnd6V0bHwRqjSvBggnaM/exec"    // s'ha de substituir la cadena de text per la URL del script
 
 function inici_sessio() {
-    nom = document.getElementById("nom_usuari").value;    // la propietat "value" d'un quadre de text correspon al text escrit per l'usuari
+    nom = document.getElementById("usuari").value;    // la propietat "value" d'un quadre de text correspon al text escrit per l'usuari
     contrasenya = document.getElementById("contrasenya").value;
     let consulta = scriptURL + "?query=select&where=usuari&is=" + nom + "&and=contrasenya&equal=" + contrasenya;
     fetch(consulta)
@@ -44,7 +44,7 @@ function inicia_sessio() {
     canvia_seccio(1);    // es mostra la secció 1
 }
 function nou_usuari() {
-    nom = document.getElementById("nom_usuari").value;
+    nom = document.getElementById("usuari").value;
     contrasenya = document.getElementById("contrasenya").value;
     let consulta_1 = scriptURL + "?query=select&where=usuari&is=" + nom;    // primera consulta per saber si ja existeix algun usuari amb el nom escrit per l'usuari que es vol registrar
     fetch(consulta_1)
