@@ -4,7 +4,7 @@ html {
 body {
     @media (orientation: landscape) {
     body {
-        flex-direction: row;    /* sobreescriu la declaració flex-direction: column; */
+        flex-direction: column;    /* sobreescriu la declaració flex-direction: column; */
         flex-flow: row-reverse;    /* disposició de dreta a esquerra, per mostrar el menú a l'esquerra */
     }
     #superior {
