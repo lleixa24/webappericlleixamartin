@@ -18,10 +18,18 @@
     <div id="superior">    <!-- franja superior per mostar el nom de la webapp -->
         Webapp Eric Lleixa el mes xulet
     </div>
+    <div id="menu">      
+      <i id="boto_1" class="fa-solid fa-house"></i>    <!-- secció inicial -->     
+      <i id="boto_2" class="fa-solid fa-camera"></i>    <!-- càmera -->
+      <i id="boto_3" class="fa-solid fa-image"></i>     <!-- galeria -->
+      <i id="boto_4" class="fa-solid fa-map"></i>    <!-- mapa -->
+      <i class="fa-solid fa-right-from-bracket"></i>    <!-- tancar sessió -->
+    </div>
     <div id="seccio_1">    <!-- espai central per mostrar contingut -->
         Lorena la millor programadora
     </div>
     <div id="seccio_0" class="seccio">
+    </div>
     <div>
       Inici de sessió    <!-- títol de la secció -->
     </div> 
@@ -71,11 +79,14 @@
       <div id="seccio_5" class="seccio">
         <div>
           <i id="icona_video" class="fa-solid fa-video"></i>    <!-- icona d'una càmera de vídeo -->
-          <div id="webcam-container"></div>    <!-- contenidor de vídeo -->
+          <div id="webcam-container">
+          </div>    <!-- contenidor de vídeo -->
         </div>
         <div id="reconeixement">    <!-- espai per visualitzar les dades -->
-          <div id="coincidencia">COINCIDÈNCIA</div>
-          <div id="prediccions"></div>
+          <div id="coincidencia">COINCIDÈNCIA
+          </div>
+          <div id="prediccions">
+          </div>
         </div>
       </div>
       <div id="seccio_6" class="seccio">
@@ -85,6 +96,7 @@
         </div>
         <div id="div_valor">    <!-- contenidor del valor més actual -->
       </div>
+    </div>
       <div id="menu">    <!-- franja inferior per al menú de navegació -->
         <i id="boto_1" class="fa-solid fa-house" onclick="canvia_seccio(1)"></i>     
         <i id="boto_2" class="fa-solid fa-camera" onclick="canvia_seccio(2)"></i>
