@@ -157,6 +157,9 @@ body {
     #foto_gran {
         transform: rotate(-90deg);    /* gir de 90 graus correponent al canvi d'orientació */
     }
+    #seccio_5 {
+    flex-direction: row;
+    }
 }
 #llista_titol {
     display: flex;
@@ -188,4 +191,18 @@ body {
     #llista_fotos {
         height: 70vmin;
     }
+}
+#webcam-container {
+    margin: 2vh;
+}
+#reconeixement {
+    text-align:center;
+}
+#coincidencia {
+    display: none;    /* es farà visible quan es comencin a tenir dades */
+    font-size: 4vh;
+    margin-bottom: 1vh;
+}
+#prediccions {
+    font-size: 3vh;
 }
