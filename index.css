@@ -17,7 +17,7 @@ body {
         flex-flow: row-reverse;    /* disposició de dreta a esquerra, per mostrar el menú a l'esquerra */
     }
     #superior {
-        display: none;    /* franja superior oculta per optimitzar l'espai */
+        display: flex;    /* franja superior oculta per optimitzar l'espai */
     }
     #menu {
         flex-direction: column;
