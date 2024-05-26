@@ -187,6 +187,11 @@ body {
 #llista_fotos::-webkit-scrollbar {
     display: none;    /* oculta la barra de desplaçament vertical */
 }
+@media (orientation: landscape) {
+    #llista_fotos {
+        height: 70vmin;
+    }
+}
 #webcam-container {
     margin: 2vh;
 }
