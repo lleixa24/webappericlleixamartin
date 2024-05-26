@@ -202,3 +202,12 @@ function esborra_foto(id) {
         };
     }
 }
+function geoExit(posicio){
+    let latitud = posicio.coords.latitude;
+    let longitud = posicio.coords.longitude;
+    if (typeof geoID === "undefined") {    
+        geoID = L.marker([latitud, longitud], {zIndexOffset:100, title:"Usuari"}).addTo(mapa);    // es defineix el marcador  geoID i es situa per sobre dels altres
+    } else {    // primeres dades de localització, es crea el marcador d'usuari 
+        geoID.setLatLng([latitud, longitud]);    // actualització de la posició del marcador d'usuari en el mapa
+    }
+}
