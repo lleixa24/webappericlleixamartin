@@ -226,4 +226,4 @@ body {
 .ocult {
     display: none !important;    /* amb prioritat sobre les declaracions condicionals segons l'orientació */
 }
-}
+
