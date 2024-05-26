@@ -168,7 +168,7 @@ body {
     text-align: center;
 }
 #llista_titol i {
-    font-size: 8vmax;
+    font-size: 4vmax;
     color:#950E17;
 }
 #llista_titol i:nth-child(1) {    /* primer <i> (miniatura de la foto) */
@@ -186,11 +186,6 @@ body {
 }
 #llista_fotos::-webkit-scrollbar {
     display: none;    /* oculta la barra de desplaçament vertical */
-}
-@media (orientation: landscape) {
-    #llista_fotos {
-        height: 70vmin;
-    }
 }
 #webcam-container {
     margin: 2vh;
